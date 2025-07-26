@@ -74,40 +74,8 @@
 }
 
 @media (max-width: 576px) {
-  .testimonial-card {
-    min-width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
   .container {
-    flex-direction: column; 
-  }
-
-  .testimonial-header {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .testimonial-slider-wrapper {
-    overflow-x: auto; 
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; 
-  }
-
-  .testimonial-slider-wrapper::-webkit-scrollbar {
-    display: none; 
-  }
-
-  .testimonial-slider {
-    flex-wrap: nowrap;
-    width: max-content;
-  }
-
-  .testimonial-card {
-    flex: 0 0 80%; 
-    min-width: 250px;
-    max-width: 80%;
-    scroll-snap-align: start;
+    padding: 0;
   }
 }
+
