@@ -23,8 +23,6 @@
   .nav-buttons button {
     width: 40px;
     height: 40px;
-    background-color: #0a0a0a; 
-    color: #e8e4e4;
     border: none;
     border-radius: 50%;
     font-size: 24px;
@@ -55,7 +53,6 @@ h2 {
 
 .nav-buttons button {
   
-  color: #fff;
   border: none;
   border-radius: 50%;
   width: 36px;
@@ -74,7 +71,6 @@ h2 {
 
 .testimonial-card {
   flex: 0 0 350px;
-  background: #fff;
   border-radius: 12px;
   padding: 20px;
   margin-right: 20px;
@@ -105,6 +101,10 @@ h2 {
 
 .user-info p {
   margin: 0;
-  font-size: 14px;
-  color: #6b7280;
+ 
+}
+@media (max-width: 576px) {
+  .testimonial-card {
+    min-width: 100%;
+  }
 }

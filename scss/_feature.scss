@@ -63,3 +63,29 @@
   max-width: 1140px;
   gap: 5rem;
 }
+.logo-item {
+  max-height: 40px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 576px) {
+  .brand-logos {
+    gap: 1.5rem;
+  }
+
+  .logo-item {
+    max-height: 30px;
+    flex: 1 0 40%;
+  }
+}

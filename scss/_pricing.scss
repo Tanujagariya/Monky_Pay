@@ -17,9 +17,11 @@
       border-radius: 20px;
       box-shadow: 0 0 20px rgba(0,0,0,0.05);
       transition: transform 0.3s ease-in-out;
+      
     }
 
     .card:hover {
+     
       transform: translateY(-5px);
     
     }
@@ -68,4 +70,17 @@
   padding: 2rem;
   border-radius: 0.5rem;
   position: relative;
+}
+.btn {
+  transition: color 0.3s ease;
+}
+
+.card .btn:hover {
+  color: white !important;
+}
+@media (max-width: 576px) {
+  .highlight-card {
+    padding: 1rem;
+    text-align: center;
+  }
 }
