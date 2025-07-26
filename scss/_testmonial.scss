@@ -1,7 +1,7 @@
+
 .testimonial-section {
   background: #f9f9f9;
   padding: 60px 0;
- 
 }
 
 .container {
@@ -15,54 +15,26 @@
   margin-bottom: 30px;
 }
 
-.nav-buttons {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-  }
-  .nav-buttons button {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-  }
-  .nav-buttons button:hover {
-    background-color: #0b5ed7;
-  }
-h2 {
-  font-size: 2rem;
- 
-}
-
 .description {
-  color: #6b7280;
+
   margin-bottom: 1rem;
 }
 
-.nav-buttons {
-  display: flex;
-  gap: 10px;
+.nav-buttons img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.nav-buttons button {
-  
-  border: none;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
+.nav-buttons img:hover {
+  transform: scale(1.1);
 }
 
 .testimonial-slider-wrapper {
   overflow: hidden;
 }
+
 .testimonial-slider {
   display: flex;
   transition: transform 0.3s ease-in-out;
@@ -75,7 +47,6 @@ h2 {
   margin-right: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
-
 .stars {
   color: #f59e0b;
   margin-bottom: 10px;
@@ -100,10 +71,43 @@ h2 {
 
 .user-info p {
   margin: 0;
- 
 }
+
 @media (max-width: 576px) {
   .testimonial-card {
     min-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column; 
+  }
+
+  .testimonial-header {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .testimonial-slider-wrapper {
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; 
+  }
+
+  .testimonial-slider-wrapper::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .testimonial-slider {
+    flex-wrap: nowrap;
+    width: max-content;
+  }
+
+  .testimonial-card {
+    flex: 0 0 80%; 
+    min-width: 250px;
+    max-width: 80%;
+    scroll-snap-align: start;
   }
 }

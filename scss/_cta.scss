@@ -1,15 +1,4 @@
-.app-cta-section {
-  .cta-box {
-      height:100%;
-      width: 100%;
-    background-image: url("/assets/images/backgroundimg.webp"); 
-    background-position: center;
-    border-radius: 1rem;
-    position: relative;
-    overflow: hidden;
-}
-}
-   
+
  .btn-btn1 {
   padding: 10px 20px; 
   color: #ffffff;   
@@ -25,17 +14,23 @@
   
     
 }
-// .cta-box {
-//   background-color: #1d1f2f; 
-//   border-radius: 16px;
-//   max-width: 900px;
-//   width: 100%;
-//   min-height: 320px;
-// }
-
-
 
 .btn-btn1:hover,
 .btn-btn2:hover {
   opacity: 0.9;
+}
+.app-cta-section .cta-box {
+  background-image: url("/assets/images/backgroundimg.webp"); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 450px; /* Ensure full background shows */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
