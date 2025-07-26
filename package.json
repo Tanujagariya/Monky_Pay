@@ -1,6 +1,13 @@
 {
+  "scripts": {
+  "sass": "sass scss/style.scss css/style.min.css --style=compressed",
+  "dev": "sass scss/style.scss css/style.min.css --style=compressed --watch"
+},
+
   "dependencies": {
-    "bootstrap": "^5.3.7",
-    "sass": "^1.89.23"
+    "bootstrap": "^5.3.7"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
   }
 }
