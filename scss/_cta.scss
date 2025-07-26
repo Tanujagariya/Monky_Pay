@@ -1,0 +1,41 @@
+.app-cta-section {
+  .cta-box {
+      height:100%;
+      width: 100%;
+    background-image: url("/assets/images/backgroundimg.webp"); 
+    background-position: center;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+}
+   
+ .btn-btn1 {
+  padding: 10px 20px; 
+  color: #ffffff;   
+    border: 1px solid #ffffff;
+    border-radius: 22px;
+    background-color: blue;
+    
+}
+.btn-btn2 {
+  padding: 11px 22px;    
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+  
+    
+}
+// .cta-box {
+//   background-color: #1d1f2f; 
+//   border-radius: 16px;
+//   max-width: 900px;
+//   width: 100%;
+//   min-height: 320px;
+// }
+
+
+
+.btn-btn1:hover,
+.btn-btn2:hover {
+  opacity: 0.9;
+}

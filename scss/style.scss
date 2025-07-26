@@ -1,0 +1,117 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+
+
+$primary: #001f3f;
+$secondary: #4d525f;
+$accent: #f6f6f6;
+$info: #762fbd;
+$body-color: #ffffff;
+$primary-bg: #2E68FD;
+$secondary-bg: #f5f2ee;
+$accent-bg: #a2cdf1;
+$info-bg: #deb8d2;
+
+
+$light-blue-card: #eef2ff;
+$light-yellow-card: #fffbf0;
+$light-purple-card: #f8f0ff;
+$light-green-card: #f0fff4;
+
+
+$custom_theme_colors: (
+  "accent": $accent,
+  "primary-bg": $primary-bg,
+  "secondary-bg": $secondary-bg,
+  "accent-bg": $accent-bg,
+  "info-bg": $info-bg,
+  "light-blue-custom": $light-blue-card,
+  "light-yellow-custom": $light-yellow-card,
+  "light-purple-custom": $light-purple-card,
+  "light-green-custom": $light-green-card
+);
+
+
+$font-family-sans-serif: "Urbanist", sans-serif;
+$font-size-base: 1rem;
+
+
+$h1-font-size: min(4rem, calc(1rem + 4vw));
+$h2-font-size: 3.5rem;
+$h3-font-size: 2.5rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1.125rem;
+
+
+$spacer: 10px;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.5,
+  2: $spacer * 1,
+  3: $spacer * 1.5,
+  4: $spacer * 2,
+  5: $spacer * 2.5,
+  6: $spacer * 3,
+  7: $spacer * 3.5,
+  8: $spacer * 4,
+  50: $spacer * 5,
+  60: $spacer * 6,
+  70: $spacer * 7,
+  80: $spacer * 8,
+  90: $spacer * 9,
+  100: $spacer * 10,
+  120: $spacer * 12
+);
+
+
+$container-max-widths: (
+  xl: 1137px,
+  xxl: 1140px 
+);
+
+@import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/maps";
+// @import "../node_modules/bootstrap/scss/mixins";
+
+
+$theme-colors: map-merge($theme-colors, $custom_theme_colors);
+
+
+
+.btn-blue {
+  color: #fff;
+  background-color: blue;
+  border-radius: 20px;
+  border: 1px solid blue;
+}
+
+.btn-white {
+  color: $primary;
+  border: 2px solid $primary;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: $primary;
+    color: #eedded;
+  }
+}
+
+body {
+  background-color: $body-color;
+}
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import './header';
+@import './mainheader';
+@import './hero';
+@import './work';
+@import './feature';
+@import './security';
+@import './pricing';
+@import './testmonial';
+@import './cta';
+@import './footer';

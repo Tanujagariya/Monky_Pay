@@ -1,0 +1,135 @@
+.hero-section {
+
+  position: relative;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: -60px; 
+ 
+}
+h1{
+  font-size: 64px;
+}
+.hero-image-wrapper {
+  position: relative;
+}
+
+
+.float-card {
+  z-index: 2;
+}
+
+.card-top {
+  top: 35%;
+  right: -30%;
+}
+
+.card-bottom {
+  bottom: 10%;
+  left: 30%;
+  transform: translateX(-50%);
+  min-width: 160px;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .hero-img {
+    margin-right: 0;
+  }
+  .card-top {
+    top: 0;
+    right: 0;
+    transform: scale(0.85);
+  }
+  .card-bottom {
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.85);
+  }
+}
+.line {
+  display: block;
+}
+.bg-text-image {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.bg-text-image::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 14px;
+  background-image: url("/assets/images/vector.webp");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media (max-width: 576px) {
+  .bg-text-image::after {
+    height: 8px;
+  }
+}
+.store-icon {
+  width: 30px;
+  height: auto;
+}
+
+.app-store, .google-play {
+  min-width: 100px;
+}
+.hero-heading {
+  line-height: 1.1;
+  max-width: 460px;    
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+.hero-heading span.d-block {
+  display: block;
+}
+
+.bg-text-image {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+
+.bg-text-image::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.15em; /* Position below the text */
+  width: 100%;
+  height: 12px;
+  background-image: url('/assets/images/vector.webp'); /* ✔️ Replace with your correct path */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+@media (max-width: 576px) {
+  .card-top {
+    position: relative;  
+    top: auto;
+    left: auto;
+    margin-top: 1rem;
+  }
+}
+
